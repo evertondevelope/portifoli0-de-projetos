@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> entre em contato</title> <!-- lembrese que o tiulo na parte da cabeça ele fica nome da página-->
+</head>
+<body>
+ <form action="" method="post" autocomplete="on">
+  <fieldset  >
+    <legend> <strong>Entre em Contato:</strong></legend>
+<label for="bora">Selecione o assunto</label>
+<select name="assunto" id="bora">
+<option value="">selecione</option>     
+<option value="suport">suporte</option>
+<option value="dica">dica</option>
+<option value="quero falar com você">quero falar com você</option>
+
+</select>
+<br>
+<label for="uu">Nome Completo</label><br>
+<input type="text"  id="uu"  placeholder="digite seu nome aqui" size="15" minlength="4" title="quantidade de caracteres minima de 4" pattern="^([A-Z]{1}[a-z]+)(.+?)$">
+<br>
+
+<label for="jj" >E-mail</label><br>
+<input type="text" id="jj" autocomplete="email" placeholder="digite seu email aqui" size="15" minlength="4" pattern="^(\w+[.]+[@](gmail|hotmail)[.].+)$"> <!-- lembre-se de quando finalizar regex colocar o () caso voce tenha que escrever mais do que um grupo-->
+<br>
+
+<label for="va">mensagem</label>
+ <br>
+<textarea name="mensagem para voce" id="va" cols="30" rows="10" required wrap="soft" maxlength="100" minlength="4"></textarea>
+<br>
+      <label for="go">Aceito receber novidades por e-mail </label>
+<input type="checkbox" checked id="go"> 
+
+<button type="submit" >enviar</button>   <button type="reset">Limpar</button>
+     </fieldset>
+    </form>
+</body>
+</html>
